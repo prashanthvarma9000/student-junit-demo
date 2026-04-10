@@ -8,5 +8,6 @@ import com.example.student_junit_demo.entity.Student;
 @Repository
 public interface StudentRepository extends JpaRepository<Student, Integer> {
 	
-	
+	public Student findBySname(String sname);
+	public Student findBySemail(String semail);
 }
